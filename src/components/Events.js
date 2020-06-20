@@ -9,13 +9,13 @@ export const Event = ({
     time = '12:00AM PST',
 }) => {
     return (
-        <Container>
+        <Container id="event">
             <Row>
-                <Col>
+                <Col id="date" xs="3">
                     <h2>{month.slice(0, 3).toUpperCase()}</h2>
                     <h3>{day}</h3>
                 </Col>
-                <Col>
+                <Col id="title" xs="9">
                     <h2>{name}</h2>
                     <p>{time}</p>
                 </Col>

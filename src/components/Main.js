@@ -26,7 +26,15 @@ class Main extends React.Component {
             <>
                 <Header />
                 <Switch>
-                    <Route path="/home" component={Home} />
+                    <Route
+                        path="/home"
+                        render={() => (
+                            <Home
+                                rosterArray={this.state.roster}
+                                eventArray={this.state.events}
+                            />
+                        )}
+                    />
                     <Route
                         path="/roster"
                         render={() => (

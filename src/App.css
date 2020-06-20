@@ -28,7 +28,63 @@
     color: #61dafb;
 }
 
-.Roster img {
-    width: 100px;
-    height: 100px;
+.container {
+    margin: 1rem auto;
+}
+
+.navbar {
+    background-color: #5640b3;
+}
+
+.site-footer {
+    background-color: #5640b3;
+    color: #6ae2e7;
+}
+
+.site-footer svg {
+    color: #6ae2e7;
+}
+
+.media {
+    background-color: #cccccc;
+}
+
+.media img {
+    padding-right: 1rem;
+    max-width: 35%;
+}
+
+.media-body {
+    min-width: 60%;
+}
+
+.media-heading {
+    color: #5640b3;
+}
+
+#splash {
+    max-width: 100%;
+    min-height: 700px;
+    background: url('/assets/images/gear.jpg') center;
+    background-size: cover;
+}
+
+#splash .row {
+    height: 600px;
+}
+
+#splash p {
+    text-shadow: 2px 2px 4px black;
+}
+
+#event {
+    background-color: #cccccc;
+}
+
+#event #date {
+    background-color: #999999;
+}
+
+#event #title {
+    color: #5640b3;
 }
