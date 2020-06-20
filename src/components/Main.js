@@ -11,12 +11,14 @@ import Footer from './Footer';
 
 // data
 import { ROSTER } from '../data/rosterData';
+import { EVENTS } from '../data/eventData';
 
 class Main extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             roster: ROSTER,
+            events: EVENTS,
         };
     }
     render() {
@@ -31,7 +33,10 @@ class Main extends React.Component {
                             <Roster rosterArray={this.state.roster} />
                         )}
                     />
-                    <Route path="/events" component={Events} />
+                    <Route
+                        path="/events"
+                        render={() => <Events eventArray={this.state.events} />}
+                    />
                     <Route path="/apply" component={Apply} />
                     <Redirect to="/home" />
                 </Switch>
