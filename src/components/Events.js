@@ -1,24 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 
-const Events = ({ eventArray = [] }) => {
-    return (
-        <div className="Events">
-            <h1>Events</h1>
-            {eventArray.map((event) => (
-                <Event
-                    key={event.id}
-                    name={event.name}
-                    desc={event.desc}
-                    month={event.month}
-                    day={event.day}
-                    time={event.time}
-                />
-            ))}
-        </div>
-    );
-};
-
 export const Event = ({
     name = 'Event Name',
     desc = 'Event Description',
@@ -42,6 +24,24 @@ export const Event = ({
                 <Col>{desc}</Col>
             </Row>
         </Container>
+    );
+};
+
+const Events = ({ eventArray = [] }) => {
+    return (
+        <div className="Events">
+            <h1>Events</h1>
+            {eventArray.map((event) => (
+                <Event
+                    key={event.id}
+                    name={event.name}
+                    desc={event.desc}
+                    month={event.month}
+                    day={event.day}
+                    time={event.time}
+                />
+            ))}
+        </div>
     );
 };
 
